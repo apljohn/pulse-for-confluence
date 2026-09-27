@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité Project Pulse</title>
+<meta name="description" content="Les données traitées par Project Pulse : aucune donnée personnelle stockée, rien ne sort de chez Atlassian.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="en" href="privacy.html">
+</head>
+<body>
+
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#0b4fb5"/><rect x="5" y="12" width="9" height="4" rx="1" fill="#fff"/><rect x="15" y="12" width="4" height="4" rx="1" fill="#9cc4ff"/><rect x="20" y="12" width="3" height="4" rx="1" fill="#6b8fcf"/></svg>
+      Project Pulse
+    </a>
+    <nav class="site" aria-label="Menu principal">
+      <a href="docs.html" hreflang="en">Documentation</a>
+      <a href="confidentialite.html" aria-current="page">Confidentialité</a>
+      <a href="mailto:support@johna.app">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : 27 septembre 2026 · <a href="privacy.html" hreflang="en" lang="en">English version</a></p>
+
+  <p>Cette politique décrit les données traitées par l'application « Project Pulse » (ci-après « l'application »), une macro pour Atlassian Confluence Cloud qui affiche l'avancement de projets Jira.</p>
+  <p><strong>Éditeur de l'application :</strong> JADapps<br><strong>Contact :</strong> <a href="mailto:support@johna.app">support@johna.app</a></p>
+
+  <h2>En résumé</h2>
+  <ul>
+    <li>L'application <strong>ne stocke aucune donnée personnelle</strong> : ni nom, ni adresse e-mail, ni identifiant de compte.</li>
+    <li>Toutes les données restent <strong>dans l'infrastructure d'Atlassian</strong>. L'application est construite sur Atlassian Forge et n'envoie aucune donnée à l'éditeur ni à un service tiers. Elle ne fait aucun appel réseau vers l'extérieur d'Atlassian.</li>
+    <li>L'application n'utilise <strong>ni cookie, ni outil de mesure d'audience, ni publicité</strong>.</li>
+  </ul>
+
+  <h2>Données enregistrées par l'application</h2>
+  <p>L'application enregistre, dans le stockage fourni par Atlassian Forge et pour chaque macro insérée dans une page :</p>
+  <ul>
+    <li>les informations saisies par les personnes qui configurent la macro : noms de projets, états, échéances, niveaux de santé, noms des lots de travail, commentaires et phrases destinées aux clients ;</li>
+    <li>les clés des tickets Jira (épiques) rattachés à chaque lot de travail ;</li>
+    <li>les dates de dernière modification de ces informations ;</li>
+    <li>les trois dernières versions des informations de chaque projet ;</li>
+    <li>le dernier nombre de tickets lu pour chaque lot de travail, par état (terminé, en cours, à faire), avec sa date de lecture, afin de limiter les appels à Jira.</li>
+  </ul>
+  <p>Les commentaires et phrases sont des <strong>textes libres</strong>. L'application ne contrôle pas leur contenu : les personnes qui les saisissent sont invitées à ne pas y inscrire de données personnelles.</p>
+
+  <h2>Données consultées sans être enregistrées</h2>
+  <p>Pour fonctionner, l'application consulte, sans les enregistrer :</p>
+  <ul>
+    <li>l'identifiant de la page Confluence et de la macro, fournis par Atlassian ;</li>
+    <li>l'identifiant du compte de la personne connectée, uniquement pour vérifier auprès de Confluence qu'elle a le droit de modifier la page avant de lui permettre de modifier la macro ;</li>
+    <li>l'état des tickets Jira rattachés, pour calculer les compteurs ;</li>
+    <li>la liste des projets et épiques Jira visibles par la personne qui configure la macro, pour lui permettre de choisir les lots de travail ;</li>
+    <li>la langue d'affichage annoncée par Atlassian pour la personne qui regarde, uniquement pour choisir entre le français et l'anglais ;</li>
+    <li>l'état de l'abonnement de l'installation, fourni par Atlassian à chaque appel, uniquement pour vérifier que l'application a le droit de fonctionner. Il ne contient aucune donnée personnelle.</li>
+  </ul>
+  <p>L'application n'affiche aux lecteurs de la page que des compteurs de tickets. Elle n'affiche jamais le contenu des tickets Jira, les noms des personnes ni les clés de tickets.</p>
+
+  <h2>Autorisations demandées</h2>
+  <ul>
+    <li><code>read:jira-work</code> : lecture des tickets Jira, pour les compteurs et le choix des lots. L'application n'écrit jamais dans Jira.</li>
+    <li><code>read:confluence-content.permission</code> : vérification du droit de modifier une page Confluence.</li>
+    <li><code>storage:app</code> : stockage des informations décrites ci-dessus.</li>
+  </ul>
+
+  <h2>Durée de conservation</h2>
+  <ul>
+    <li>Les informations d'une macro sont conservées tant qu'elles ne sont pas retirées par une personne autorisée à modifier la page.</li>
+    <li>Un projet retiré de la macro reste stocké 30 jours, puis il est supprimé lors de l'enregistrement suivant.</li>
+    <li>Les compteurs de tickets sont remplacés par une nouvelle lecture de Jira à l'ouverture de la page, dès que la précédente date de plus de 30 minutes.</li>
+  </ul>
+
+  <h2>Hébergement et sous-traitance</h2>
+  <p>Les données sont hébergées par Atlassian dans le cadre de la plateforme Forge. Le traitement de ces données par Atlassian est régi par les conditions et la politique de confidentialité d'Atlassian : <a href="https://www.atlassian.com/legal/privacy-policy">atlassian.com/legal/privacy-policy</a>.</p>
+
+  <h2>Vos droits</h2>
+  <p>Les informations saisies dans la macro appartiennent à l'organisation qui utilise le site Atlassian. Pour toute question sur ces données ou sur cette politique, vous pouvez contacter l'éditeur à l'adresse indiquée en haut de ce document, ou l'administrateur de votre site Atlassian.</p>
+  <p>Vous pouvez également adresser une réclamation à l'autorité de protection des données de votre pays (en France, la CNIL : <a href="https://www.cnil.fr">cnil.fr</a>).</p>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <span>Project Pulse par JADapps</span>
+    <a href="docs.html" hreflang="en">Documentation</a>
+    <a href="privacy.html" hreflang="en" lang="en">Privacy (English)</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="mailto:support@johna.app">support@johna.app</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Pulse documentation</title>
+<meta name="description" content="How to install Project Pulse, set up a view of your Jira projects in Confluence, and keep it up to date.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#0b4fb5"/><rect x="5" y="12" width="9" height="4" rx="1" fill="#fff"/><rect x="15" y="12" width="4" height="4" rx="1" fill="#9cc4ff"/><rect x="20" y="12" width="3" height="4" rx="1" fill="#6b8fcf"/></svg>
+      Project Pulse
+    </a>
+    <nav class="site" aria-label="Main">
+      <a href="docs.html" aria-current="page">Documentation</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:support@johna.app">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Documentation</h1>
+  <p class="lede">Set up a view once, then keep it true in five minutes a week.</p>
+
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#requirements">Before you start</a></li>
+      <li><a href="#install">Install the app</a></li>
+      <li><a href="#insert">Add the view to a page</a></li>
+      <li><a href="#setup">Set up the view</a></li>
+      <li><a href="#weekly">The weekly update</a></li>
+      <li><a href="#reading">What readers see</a></li>
+      <li><a href="#messages">Messages you may see</a></li>
+      <li><a href="#faq">Questions</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="requirements">1. Before you start</h2>
+  <ul>
+    <li><strong>Confluence Cloud and Jira Cloud on the same site.</strong> The view lives in Confluence and reads its figures from Jira.</li>
+    <li><strong>Epics in Jira.</strong> Each work item shown in the view is a Jira epic; its figures are the issues inside it.</li>
+    <li><strong>Readers only need Confluence.</strong> People who read the page need no Jira licence. Only the person who sets up the view needs a Jira account, to choose the epics.</li>
+  </ul>
+
+  <h2 id="install">2. Install the app</h2>
+  <ol>
+    <li>A site administrator installs Project Pulse from the Atlassian Marketplace. The app is installed in <strong>Confluence</strong>.</li>
+    <li>When asked, also connect the app to <strong>Jira</strong>. Without Jira the view can still be set up, but every figure shows as unavailable.</li>
+  </ol>
+  <p>A free trial starts with the installation. When the trial or the subscription ends, the view is replaced by a notice asking readers to contact their administrator; nothing is deleted, and the view comes back as soon as the subscription is active again.</p>
+
+  <h2 id="insert">3. Add the view to a page</h2>
+  <ol>
+    <li>Edit a Confluence page, type <kbd>/</kbd> then <strong>Project Pulse</strong>, and select it.</li>
+    <li>Publish the page. It now says <em>No projects to show</em>: the view is empty until it is set up.</li>
+  </ol>
+  <p>You can place several views on different pages, for instance one per team or per client. Each view is independent.</p>
+
+  <h2 id="setup">4. Set up the view</h2>
+  <div class="note">
+    <p><strong>The buttons only appear while the page is in edit mode.</strong> Readers never see them. Open the page, click the edit (pencil) icon, and the view shows <span class="ui">Set up this view</span> (empty view) or <span class="ui">Update</span> and <span class="ui">Refresh figures</span>.</p>
+  </div>
+  <ol>
+    <li>Click <span class="ui">Set up this view</span>, then open the <span class="ui">Setup</span> tab.</li>
+    <li>Click <span class="ui">Add a project</span>. Give it a <span class="ui">Project name</span> and a <span class="ui">State</span>: Upcoming, In progress or Done.</li>
+    <li>Click <span class="ui">Attach work items</span>, choose a Jira project, tick its epics and add them. Only the epics your own Jira account can see are listed.</li>
+    <li>Rename each work item if its Jira name means nothing to a reader: the <span class="ui">Name shown for this work item</span> is what appears on the page.</li>
+    <li>Reorder projects with <span class="ui">Move up</span> and <span class="ui">Move down</span>, then click <span class="ui">Save</span>.</li>
+  </ol>
+  <p>The first time you open the setup, Atlassian may show an <strong>Allow access</strong> screen. It is asked once per person, and lets the app check that you may edit the page and list the epics your Jira account can see. Readers never see it.</p>
+  <p>Only people who can edit the Confluence page can change the view. A view holds up to 30 projects, and a project up to 100 work items.</p>
+
+  <h2 id="weekly">5. The weekly update</h2>
+  <p>This is the only recurring task, and it takes about five minutes. Put the page in edit mode, click <span class="ui">Update</span>, and stay on <span class="ui">This week's update</span>. For each project:</p>
+  <ol>
+    <li><span class="ui">Project health</span>: On track, At risk or Blocked.</li>
+    <li><span class="ui">Date being announced</span>: free text, for example "end of October". No exact date needed.</li>
+    <li>One comment per work item, in plain words.</li>
+    <li><span class="ui">What you can tell the client</span>: one or two sentences the sales team can repeat as they are. Optional, but it is what readers look for first.</li>
+  </ol>
+  <p>Then one <span class="ui">Save</span> for everything.</p>
+  <h3>Comments that go stale</h3>
+  <p>A comment not changed for more than 10 days is flagged <em>Not changed for N days</em>. If it is still accurate, click <span class="ui">Still accurate</span>: it is confirmed without retyping it.</p>
+  <h3>A work item that slips</h3>
+  <p>In the <span class="ui">Setup</span> tab, tick <span class="ui">Show this work item as delayed</span>. The page then labels it <em>Delayed</em> and shows its remaining part in yellow.</p>
+
+  <h2 id="reading">6. What readers see</h2>
+  <p>For each project: its health, the date being announced, how many work items are done, the project manager's comments and the sentence for the client. Under it, a bar with one segment per work item:</p>
+  <div class="bar" role="img" aria-label="Example bar: done, in progress, to do"><i class="d"></i><i class="p"></i><i class="t"></i></div>
+  <ul>
+    <li>Colours show <strong>Done</strong>, <strong>In progress</strong> and <strong>To do</strong> issues.</li>
+    <li>The width of a segment is proportional to the <strong>number</strong> of issues. It measures neither effort nor time, and the legend says so.</li>
+  </ul>
+  <p><strong>There is no percentage, on purpose.</strong> A percentage invites a rule of three on the time left, and that estimate is wrong. The view gives plain counts instead, and a work item where nothing has started says so rather than suggesting a date.</p>
+  <p>Figures are read from Jira when the page is opened, at most every 30 minutes. To update them right away, put the page in edit mode and click <span class="ui">Refresh figures</span>. The view states when the figures were last read.</p>
+  <p>The view follows the language of the reader: French, or English for every other language.</p>
+
+  <h2 id="messages">7. Messages you may see</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Message</th><th>What it means</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td>Not broken down yet</td><td>The epic contains no issues.</td><td>Add issues to the epic in Jira.</td></tr>
+      <tr><td>Work item not found in Jira</td><td>The epic was deleted or moved.</td><td>Remove the work item, or attach the right epic.</td></tr>
+      <tr><td>Figures unavailable</td><td>Jira did not answer. Comments stay visible.</td><td>Wait and reload. If it lasts, check that the app is connected to Jira.</td></tr>
+      <tr><td>Incomplete counts</td><td>The epic holds more than 10,000 issues; only the first 10,000 are counted.</td><td>Split the epic into smaller ones.</td></tr>
+      <tr><td>One of the attached work items is not visible to your Jira account</td><td>You tried to attach an epic you cannot see in Jira.</td><td>Ask someone who can see it, or ask for access in Jira.</td></tr>
+      <tr><td>This view requires an active subscription to the app</td><td>The trial or subscription has ended.</td><td>A site administrator renews it in Atlassian Administration.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="faq">8. Questions</h2>
+  <h3>Can a reader see Jira issues through the view?</h3>
+  <p>No. Only counts are sent to the page: no issue key, no summary, no description, no person's name.</p>
+  <h3>Does the app store personal data?</h3>
+  <p>No. It stores no name, e-mail address or account ID, and nothing leaves Atlassian. See the <a href="privacy.html">privacy policy</a>.</p>
+  <h3>What happens to a project I remove?</h3>
+  <p>It disappears from the page when you save. It is kept 30 days, then deleted.</p>
+  <h3>Something else?</h3>
+  <p>Write to <a href="mailto:support@johna.app">support@johna.app</a>.</p>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <span>Project Pulse by JADapps</span>
+    <a href="docs.html">Documentation</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="confidentialite.html" hreflang="fr" lang="fr">Confidentialité (français)</a>
+    <a href="mailto:support@johna.app">support@johna.app</a>
+  </div>
+</footer>
+
+</body>
+</html>

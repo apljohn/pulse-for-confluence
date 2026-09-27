@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Pulse privacy policy</title>
+<meta name="description" content="What data Project Pulse processes: no personal data stored, nothing leaves Atlassian.">
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="fr" href="confidentialite.html">
+</head>
+<body>
+
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#0b4fb5"/><rect x="5" y="12" width="9" height="4" rx="1" fill="#fff"/><rect x="15" y="12" width="4" height="4" rx="1" fill="#9cc4ff"/><rect x="20" y="12" width="3" height="4" rx="1" fill="#6b8fcf"/></svg>
+      Project Pulse
+    </a>
+    <nav class="site" aria-label="Main">
+      <a href="docs.html">Documentation</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="mailto:support@johna.app">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Privacy policy</h1>
+  <p class="meta">Last updated: 27 September 2026 · <a href="confidentialite.html" hreflang="fr" lang="fr">Version française</a></p>
+
+  <p>This policy describes the data processed by the application "Project Pulse" (the "app"), a macro for Atlassian Confluence Cloud that shows the progress of Jira projects.</p>
+  <p><strong>Publisher:</strong> JADapps<br><strong>Contact:</strong> <a href="mailto:support@johna.app">support@johna.app</a></p>
+
+  <h2>In short</h2>
+  <ul>
+    <li>The app <strong>stores no personal data</strong>: no name, no e-mail address, no account ID.</li>
+    <li>All data stays <strong>within Atlassian's infrastructure</strong>. The app is built on Atlassian Forge and sends no data to the publisher or to any third party. It makes no network call outside Atlassian.</li>
+    <li>The app uses <strong>no cookies, no analytics and no advertising</strong>.</li>
+  </ul>
+
+  <h2>Data stored by the app</h2>
+  <p>The app stores, in the storage provided by Atlassian Forge and for each macro inserted in a page:</p>
+  <ul>
+    <li>the information entered by the people who set up the macro: project names, states, announced dates, health levels, work item names, comments and sentences intended for clients;</li>
+    <li>the keys of the Jira issues (epics) attached to each work item;</li>
+    <li>the date each of these was last changed;</li>
+    <li>the last three versions of each project's information;</li>
+    <li>the last number of issues read for each work item, by state (done, in progress, to do), with the time it was read, to limit calls to Jira.</li>
+  </ul>
+  <p>Comments and sentences are <strong>free text</strong>. The app does not control their content: the people who write them are asked not to include personal data.</p>
+
+  <h2>Data read but not stored</h2>
+  <p>To work, the app reads, without storing them:</p>
+  <ul>
+    <li>the ID of the Confluence page and of the macro, provided by Atlassian;</li>
+    <li>the account ID of the signed-in person, only to check with Confluence that they may edit the page before letting them change the macro;</li>
+    <li>the status of the attached Jira issues, to compute the counts;</li>
+    <li>the Jira projects and epics visible to the person setting up the macro, so they can choose the work items;</li>
+    <li>the display language Atlassian reports for the person viewing the page, only to choose between French and English;</li>
+    <li>the subscription status of the installation, provided by Atlassian with each call, only to check that the app may run. It contains no personal data.</li>
+  </ul>
+  <p>The app shows readers of the page only issue counts. It never shows the content of Jira issues, people's names or issue keys.</p>
+
+  <h2>Permissions requested</h2>
+  <ul>
+    <li><code>read:jira-work</code>: read Jira issues, for the counts and the choice of work items. The app never writes to Jira.</li>
+    <li><code>read:confluence-content.permission</code>: check the permission to edit a Confluence page.</li>
+    <li><code>storage:app</code>: store the information described above.</li>
+  </ul>
+
+  <h2>Retention</h2>
+  <ul>
+    <li>A macro's information is kept until a person allowed to edit the page removes it.</li>
+    <li>A project removed from the macro stays stored for 30 days, then is deleted at the next save.</li>
+    <li>Issue counts are replaced by a new read from Jira when the page is opened, once the previous read is more than 30 minutes old.</li>
+  </ul>
+
+  <h2>Hosting and processors</h2>
+  <p>Data is hosted by Atlassian as part of the Forge platform. Atlassian's processing of this data is governed by Atlassian's terms and privacy policy: <a href="https://www.atlassian.com/legal/privacy-policy">atlassian.com/legal/privacy-policy</a>.</p>
+
+  <h2>Your rights</h2>
+  <p>The information entered in the macro belongs to the organisation that uses the Atlassian site. For any question about this data or this policy, contact the publisher at the address above, or the administrator of your Atlassian site.</p>
+  <p>You may also lodge a complaint with the data protection authority of your country (in France, the CNIL: <a href="https://www.cnil.fr">cnil.fr</a>).</p>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <span>Project Pulse by JADapps</span>
+    <a href="docs.html">Documentation</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="confidentialite.html" hreflang="fr" lang="fr">Confidentialité (français)</a>
+    <a href="mailto:support@johna.app">support@johna.app</a>
+  </div>
+</footer>
+
+</body>
+</html>
